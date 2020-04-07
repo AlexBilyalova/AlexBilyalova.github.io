@@ -3,86 +3,141 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Baby Yoda page</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="graduation.css">
 </head>
 <body>
-	<div class="nav">
-		<a href="https://www.starwars.com/series/the-mandalorian">Главная</a>
-		<a href="https://www.starwars.com/news">Новости</a>
-		<a href="https://www.starwars.com/video">Видео</a>
-		<a href="https://www.starwars.com/community">Сообщество</a>
-	</div>
-		<table width="100%" cellpadding="5">
-   <tr>
-    <td>
-		<h3>Малыш Йода</h3>
-		<p id="Text4">Я зеленый. За мной охотятся за вознаграждение.</p>
-		<div id="FormEdit4" class="Edit" style="display: none;">
-			<form action="">
-				<textarea name="text_field4" placeholder="..." style="width: 400px; height: 50px;"></textarea><br>
-				<input type="submit" value="Сохранить">
-			</form></div>
-	<hr size=3px width=925px align="left">
-	</td><td rowspan="3"><img src="BabyYoda_800x800.jpg" width="300px" height="350px"></td>
-   </tr>
-   <tr>
-    <td>
-		<h4>Возраст</h4>
-		<p id="Text3">Мне 50 лет.</p>
-		<div id="FormEdit3" class="Edit" style="display: none;">
-			<form action="" class="third">
-				<textarea name="text_field3" placeholder="..." style="width: 400px; height: 50px;"></textarea><br>
-				<input type="submit" value="Сохранить">
-			</form></div>
-	</td>
-   </tr>
-   <tr>
-    <td>
-		<h4>Раса</h4>
-		<p id="Text2">Сам не знаю. Такой же расы был Великий магистр Ордена джедаев Йода.<br>
-		<span id= "Show2" class="More" style="display: none">Джедаи - это рыцари-миротворцы, адепты Светлой Стороны Силы, защитники Галактической Республики. Основное оружие джедая — световой меч. Когда Палпатин объявил себя императором, то отдал приказ уничтожить всех Джедаев. Последний из них оставался Йода.</span></p>
-		<div id=FormEdit2 class="Edit" style="display: none;">
-		<form action="">
-				<textarea name="text_field2" placeholder="..." style="width: 400px; height: 50px;"></textarea><br>
-				<input type="submit" value="Сохранить">
-			</form></div>
-			<button id="btn2" onclick="readMore2()">Подробнее</button>
-   </tr>
-   <tr>
-   		<td>
-		<h4>Суперспособность</h4>
-		<p id="Text1">Владею Силой - могу передвигать предметы, исцелять раны.<br>
-		<span id="Show1"class="More" style="display: none;">Такой же Силой обладали Джедаи, кроме способности исцелять.</span></p><br>
-		<div id="FormEdit1" class="Edit" style="display: none;">
-		<form action="">
-				<textarea name="text_field1" placeholder="..." style="width: 400px; height: 50px;"></textarea><br>
-				<input type="submit" value="Сохранить">
-			</form></div>
-			<button id="btn1" onclick="readMore1()">Подробнее</button>
-   		</td><td rowspan="2">
-   			<ul>
-		<li><a href="" id="Edit_link" class="buttonEdit">Редактировать</a></li>
-		<li><a href="https://twitter.com/themandalorian"class= "buttonTwit">Twitter</a></li>
-		<li><a href="https://www.instagram.com/themandalorian/"class= "buttonInst">Instagram</a></li>
-		<li><a href="https://www.youtube.com/channel/UCZGYJFUizSax-yElQaFDp5Q" class="buttonYT">YouTube</a></li>
-	</ul></td>
-   </tr>
-	</div>
-   <tr>
-   		<td>
-		<h4>Семья</h4>
-		<p id="Text">Мандалорец мой папа.<br>
-		<span id="Show" class="More" style="display: none">Он же охотник за головами. Его воспитали мандалорцы.</span></p>
-		<div id="FormEdit" class="Edit" style="display: none;">
-			<form action="">
-				<textarea name="text_field" placeholder="..." style="width: 400px; height: 50px;"></textarea><br>
-				<input type="submit" value="Сохранить">
-			</form></div>
-			<button id="btn" onclick="readMore()">Подробнее</button>
-   		</td>
-   </tr>
-  </table>
-</div>
+	<nav class="nav navbar navbar-expand-lg navbar-light bg-light">
+	  	<a class="navbar-brand" href="#">Baby Yoda Page</a>
+	  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+	    	<span class="navbar-toggler-icon"></span>
+	  	</button>
+	    <div class="collapse navbar-collapse" id="navbarText">
+	    	<ul class="navbar-nav mr-auto">
+	      		<li class="nav-item active">
+	        		<a class="nav-link" href="https://www.starwars.com/series/the-mandalorian">Главная<span class="sr-only">(current)</span></a>
+	      		</li>
+	      		<li class="nav-item">
+	        		<a class="nav-link" href="https://www.starwars.com/news">Новости</a>
+	      		</li>
+	      		<li class="nav-item">
+	        		<a class="nav-link" href="https://www.starwars.com/video">Видео</a>
+	      		</li>
+	      		<li class="nav-item">
+	        		<a class="nav-link" href="https://www.starwars.com/community">Сообщество</a>
+	      		</li>
+	    	</ul>
+	     </div>
+	</nav>
+	<div class="tables">
+		<table class="table1">
+				<tr>
+				    <td class="card ">
+				    	<div class="card-header">
+							<h3 >Малыш Йода</h3>
+						</div>
+						<div class="card-body">
+							<p id="Text4" class="card-text">Я зеленый. За мной охотятся за вознаграждение.</p>
+						
+							<div class="Edit edit-first ">
+								<form id="FormEdit4" class="formAll form-first" action="">
+									<textarea id="text_field4" class="form-control"></textarea>
+										<a class="btn btn-primary">
+											<input type="submit" value="Сохранить"/>
+										</a>
+								</form>
+							</div>
+						</div>
+					</td>
+			   	</tr>
+			   	<tr>
+				    <td class="card">
+				    	<div class="card-header">
+							<h4>Возраст</h4>
+						</div>
+						<div class="card-body">
+							<p id="Text3" class="card-text">Мне 50 лет.</p>
+							<div  class="Edit">
+								<form action="" id="FormEdit4" class="formAll third">
+									<textarea id="text_field3" class="form-control"></textarea><br>
+								</form>
+							</div>
+						</div>
+					</td>
+			   	</tr>
+			   	<tr>
+				    <td class="card">
+				    	<div class="card-header">
+							<h4>Раса</h4>
+						</div>
+						<div class="card-body">
+							<p id="Text2" class="card-text">Сам не знаю. Такой же расы был Великий магистр Ордена джедаев Йода.
+								<span id= "Show2" class="More" >Джедаи - это рыцари-миротворцы, адепты Светлой Стороны 	Силы, защитники Галактической Республики. Основное оружие джедая — световой меч. Когда Палпатин объявил себя императором, то отдал приказ уничтожить всех Джедаев. Последний из них оставался Йода.</span>
+							</p>
+							<div class="Edit">
+								<form id="FormEdit4" action="" class="formAll">
+									<textarea id="text_field2" class="form-control"></textarea><br>
+								</form>
+							</div>
+							<button id="btn2" class="moreButton btn btn-outline-primary" onclick="readMore2()">Подробнее</button>
+						</div>
+					</td>
+			   	</tr>
+			   	<tr>
+			   		<td class="card">
+			   			<div class="card-header">
+							<h4>Суперспособность</h4>
+						</div>
+						<div class="card-body">
+							<p id="Text1" class="card-text">Владею Силой - могу передвигать предметы, исцелять раны.
+								<span id="Show1"class="More" >Такой же Силой обладали Джедаи, кроме способности исцелять.</span>
+							</p>
+						
+							<div class="Edit">
+								<form id="FormEdit4" action="" class="formAll">
+									<textarea id="text_field1" class="form-control"></textarea><br>
+								</form>
+							</div>
+							<button id="btn1" class="moreButton btn btn-outline-primary" onclick="readMore1()">Подробнее</button>
+						</div>
+			   		</td>
+			   		
+			   	</tr>
+			    <tr>
+			   		<td class="card">
+			   			<div class="card-header">
+							<h4>Семья</h4>
+						</div>
+						<div class="card-body">
+							<p id="Text" class="card-text">Мандалорец мой папа.
+								<span id="Show" class="More" >Он же охотник за головами. Его воспитали мандалорцы.</span>
+							</p>
+							<div class="Edit">
+								<form id="FormEdit4" action="">
+									<textarea id="text_field" class="form-control"></textarea><br>
+								</form>
+							</div>
+							<button id="btn" class="moreButton btn btn-outline-primary" onclick="readMore()">Подробнее</button>
+						</div>
+			   		</td>
+			    </tr>
+  		</table>
+  		<table class="table2">
+  			<tr >
+				<td class="rightSideTD"><img src="BabyYoda_800x800.jpg" width="300px" height="350px"></td>
+			</tr>
+			<tr>
+				<td class="rightSideTD">
+		   			<ul>
+						<li><a id="Edit_link" href="" class="buttonEdit">Редактировать</a></li>
+						<li><a href="https://twitter.com/themandalorian"class= "buttonTwit">Twitter</a></li>
+						<li><a href="https://www.instagram.com/themandalorian/"class= "buttonInst">Instagram</a></li>
+						<li><a href="https://www.youtube.com/channel/UCZGYJFUizSax-yElQaFDp5Q" class="buttonYT">YouTube</a></li>
+					</ul>
+				</td>
+			</tr>
+  		</table>
+  	</div>
 </body>
 <script type="text/javascript">
 	const  Edit_link = document.getElementById('Edit_link')
@@ -93,41 +148,62 @@
 	const btn1 = document.getElementById('btn1')
 	const FormEdit = document.getElementById('FormEdit')
 
+	let edited;
+
+	
 
 	Edit_link.onclick = function (event) {
 		event.preventDefault();
-
+		edited = true;
 		for (let item of Edit) {
         
-    if (item.style.display === 'none') {
-      item.style.display = 'inline-block';
-      btn.style.display = 'none';
-      btn1.style.display = 'none';
-      btn2.style.display = 'none';
-    } else {
-      item.style.display= 'none';
-	  btn.style.display = 'inline'
-	  btn1.style.display = 'inline';
-	  btn2.style.display = 'inline';
-    }
-   	}
+		    if (item.style.display === 'none') {
+		      item.style.display = 'inline-block';
+		      btn.style.display = 'none';
+		      btn1.style.display = 'none';
+		      btn2.style.display = 'none';
+		      edited = false;
+		      
+		    } else {
+		      item.style.display= 'none';
+			  btn.style.display = 'inline'
+			  btn1.style.display = 'inline';
+			  btn2.style.display = 'inline';
+			  edited = true;
+		    }
+   		}
+			if(edited==true){
+				Edit_link.innerHTML = "Редактировать";
+			}else{
+				Edit_link.innerHTML = "Сохранить изменения";
+			}
 
    		for (let item of More) {
-   	if (item.style.display === 'none') {
-   		item.style.display = 'inline-block';
-   	} else {
-   		item.style.display = 'none';
-   	}
-   }
-}
+		   	if (item.style.display === 'none') {
+		   		item.style.display = 'inline-block';
+		   	} else {
+		   		item.style.display = 'none';
+		   	}
+	   	}
+	   	
+		document.getElementById("text_field4").value = document.getElementById("Text4").textContent;
+		document.getElementById("text_field3").value = document.getElementById("Text3").textContent;
+		document.getElementById("text_field2").value = document.getElementById("Text2").textContent;
+		document.getElementById("text_field1").value = document.getElementById("Text1").textContent;
+		document.getElementById("text_field").value = document.getElementById("Text").textContent;
+
+	}
 	form.onsubmit = function (event) {
 		event.preventDefault();
+		let form4 = document.getElementById("FormEdit4");
 
-		document.getElementById('Text4').innerText = this.elements.text_field4.value;
-
-		this.reset();
-		FormEdit4.style.display= 'none';
-}
+		document.getElementById('Text4').textContent = document.getElementById("text_field4").value;
+		document.getElementById('Text3').textContent = document.getElementById("text_field3").value;
+		document.getElementById('Text2').textContent = document.getElementById("text_field2").value;
+		document.getElementById('Text1').textContent = document.getElementById("text_field1").value;
+		document.getElementById('Text').textContent = document.getElementById("text_field").value;
+	}
+	
 
 	
 	function readMore() {
@@ -144,8 +220,8 @@
 			btn.innerHTML="Подробнее";
 	
 		}
-}
-		function readMore1() {
+	}
+	function readMore1() {
 		
 		var btn1 = document.getElementById('btn1');
 		var Show1 = document.getElementById('Show1');
@@ -158,8 +234,8 @@
 			Show1.style.display='none';
 			btn1.innerHTML="Подробнее";
 		}
-}
-		function readMore2() {
+	}
+	function readMore2() {
 		
 		var Show2 = document.getElementById('Show2');
 		var btn2 = document.getElementById('btn2');
@@ -171,6 +247,6 @@
 			btn2.innerHTML="Подробнее";
 		}
        
-      }
+    }
 </script>
 </html>
